@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bullets and Bombs Game</title>
+  <style>
+    #game-board {
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+      position: relative;
+    }
+    #player1, #player2 {
+      width: 50px;
+      height: 50px;
+      background: blue;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+    #player2 {
+      background: red;
+      top: 400px;
+      left: 400px;
+    }
+    #bullet, #bomb {
+      width: 10px;
+      height: 10px;
+      background: black;
+      position: absolute;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-board">
+    <div id="player1"></div>
+    <div id="player2"></div>
+    <div id="bullet"></div>
+    <div id="bomb"></div>
+  </div>
+
+  <button id="fire-bomb">fire</button>
+
+  <script src="game.js"></script>
+</body>
+</html>
